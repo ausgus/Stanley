@@ -160,6 +160,8 @@
             margin: 130px 0px 38px 15px;
             position: relative;
             font-weight: 700;
+            display: flex;
+            gap: 8px;
         }
         .stanley-customize .custom-title::after{
             content: "";
@@ -168,9 +170,9 @@
             width: 13px;
             height: 13px;
             background-color: #00563f;
-            position: absolute;
-            left: 254px;
-            top: 3px;
+            /* position: absolute;
+            right: 35px;
+            top: 3px; */
         }
         .stanley-disign{
             width: 1650px; height: 824px;
@@ -472,6 +474,10 @@
             color: #1a1a1a;
             margin:0px 99px 38px 15px;
             position: relative;
+            width: 400px;
+
+            display: flex;
+            gap: 8px;
         }
         .wide-title::after{
             content: "";
@@ -480,9 +486,9 @@
             width: 13px;
             height: 13px;
             background-color: #00563f;
-            position: absolute;
-            left: 316px;
-            top: 3px;
+            /* position: absolute;
+            right: 74px;
+            top: 3px; */
         }
         .wide-wrap{
             display: flex;

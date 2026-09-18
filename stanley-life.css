@@ -1,0 +1,30 @@
+@charset "utf-8";
+.life{
+        width: 100%; 
+        margin-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+
+        /* overflow: hidden; */
+        }
+
+.life img{
+    width: calc(100%/2);
+
+    animation: life-in 1s;
+}
+
+@keyframes life-in{
+
+    0%{
+        transform: scale(0.98);
+        opacity: 0.5;
+    }
+
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}

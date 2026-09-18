@@ -1,0 +1,556 @@
+@charset "utf-8";
+/* ------------hero--------------- */
+        .hero{
+        width: 100%;
+        height: 680px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 120px;
+        margin-bottom: 200px;
+
+        position: relative;
+        }
+
+        .main-hero img{
+            width: 100%;
+            height: 680px;
+
+            opacity: 0;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transition: all 0.5s;
+        }
+
+        .main-hero img.on{
+            opacity: 1;
+        }
+
+        /* .hero::before{
+            content: '';
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-left: 3px solid #ffffffaa;
+            border-bottom: 3px solid #ffffffaa;
+            transform: rotate(45deg);
+
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            cursor: pointer;
+        }
+
+        .hero::after{
+            content: '';
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-right: 3px solid #ffffff87;
+            border-bottom: 3px solid #ffffff87;
+            transform: rotate(-45deg);
+
+            position: absolute;
+            top: 300px;
+            right: 200px;
+
+            cursor: pointer;
+        } */
+
+
+
+
+        /*베스트 상품------------------*/
+        .best .best-wrap .quen-bg{
+        width: 100%;
+        height: 485px;
+        background-image: url(images/main-tumbler-bg_01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .best .best-wrap .quen-bg .quencher{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-shadow: 1px 1px 2px gray;
+        }
+        .best-wrap .quen-bg .quencher img{
+        width: 628px;
+        }
+        .best-wrap .quen-bg .quencher ul li{
+        color: #f5f2eb;
+        font-size: 26px;
+        line-height: 45px;
+        transform: translateX(-60px);
+        }
+        .best-wrap h1{
+        color: #f5f2eb;
+        font-size: 43px;
+        text-shadow: 2px 1px 3px gray;
+        padding-bottom: 40px;
+        }
+        .best .best-wrap .flow-bg{
+        width: 100%;
+        height: 485px;
+        background-image: url(images/main-tumbler-bg_02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        .best .best-wrap .flow-bg .flow{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 150px;
+        }
+        .best-wrap .flow-bg .flow ul li{
+        color: #f5f2eb;
+        font-size: 26px;
+        line-height: 45px;
+        text-shadow: 1px 1px 2px gray;
+        }
+        .best-wrap .flow-bg .flow img{
+        width: 847px;
+        }
+        .best .best-wrap .slim-bg{
+        width: 100%;
+        height: 485px;
+        background-image: url(images/main-tumbler-bg_03.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 120px;
+        }
+        .best .best-wrap .slim-bg .slim{
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 170px;
+        }
+        .best-wrap .slim-bg .slim ul li{
+        color: #f5f2eb;
+        font-size: 26px;
+        line-height: 45px;
+        text-shadow: 1px 1px 2px gray;
+        }
+        .best-wrap .slim-bg .slim img{
+        width: 949px;
+}
+
+
+
+/* ------------------------커스텀---------------------- */
+
+
+        .stanley-customize{
+            width: 1680px;
+            margin: 200px auto 100px;
+            padding-bottom: 200px;
+            position: relative;
+        }
+        .stanley-customize .custom-title{
+            font-size: 53px;
+            margin: 130px 0px 38px 15px;
+            position: relative;
+            font-weight: 700;
+        }
+        .stanley-customize .custom-title::after{
+            content: "";
+            display: block;
+
+            width: 13px;
+            height: 13px;
+            background-color: #00563f;
+            position: absolute;
+            left: 254px;
+            top: 3px;
+        }
+        .stanley-disign{
+            width: 1650px; height: 824px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 30px;
+        }
+        .stanley-disign .custom-wrap{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .custom-wrap .custom-info{
+            margin-top: 100px;
+            margin-left: 70px;
+        }
+        .custom-wrap .custom-info .custom-label{
+            font-size: 56px;
+            line-height: 60px;
+            color: #1a1a1a;
+        }
+        .custom-info .custom-label .label-point{
+            color: #00563f;
+        }
+        .custom-info .custom-desc{
+            font-size: 24px;
+            color: #4e4e4e;
+            margin: 50px 0;
+        }
+        .custom-info .color-step{
+            font-size: 24px;
+            color: #1a1a1a;
+            margin-left: 20px;
+        }
+        .custom-info .color-step .color-point{
+            color: #d66c05;
+        }
+        .custom-info .color-step .option-point{
+            color: #10933e;
+        }
+        .custom-info .step-line{
+            width: 1px; height: 40px;
+            background-color: #999;
+            margin: 15px 0px 15px 35px;
+        }
+
+        
+        .custom-tumbler{
+            position: absolute;
+            left: 535px;
+            top: 80px;
+        }
+        @keyframes tumbler-up{
+            0%{
+                transform: translateY(0px);
+                opacity: 0.8;
+
+                /* 아예 안보였다가 나오는게 맞는걸까요 */
+                /* 너무 효과가 다이나믹해요... */
+            }
+
+            50%{
+                transform: translateY(-20px);
+            }
+
+            100%{
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+        }
+        .tumbler-up{
+            animation: tumbler-up 1s;
+        }
+
+
+        .custom-tumbler .selected-color{
+            position: relative;
+        }
+        
+        .custom-tumbler .selected-color::before{
+            content: "";
+            display: block;
+
+            width: 25px;
+            height: 25px;
+            background-color: #93c9bf;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -90px;
+            bottom: 238px;
+
+            animation: color-wave 0.9s infinite;
+        }
+        .custom-tumbler .selected-color::after{
+            content: "";
+            display: block;
+
+            width: 17px;
+            height: 17px;
+            background-color: #93c9bf;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -86px;
+            bottom: 242px;
+        }
+        @keyframes color-wave{
+            0%{
+                transform: scale(0.5);
+                opacity: 1;
+            }
+
+            100%{
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        .custom-tumbler .selected-color p:nth-child(1){
+            font-size: 20px;
+            position: absolute;
+            left: -100px;
+            bottom: 276px;
+        }
+        .custom-tumbler .selected-color p:nth-child(2){
+            font-size: 24px;
+            position: absolute;
+            left: -55px;
+            bottom: 237px;
+        }
+        .custom-product{
+            padding-top: 150px;
+            margin-right: 80px;
+            position: relative;
+        }
+        .custom-product .product-wrap{
+            width: 400px; height: 115px;
+            border: 1px solid #938f8f;
+            border-radius: 15px;
+            display: flex;
+            font-size: 33px;
+            color: #1a1a1a;
+            align-items: center;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .custom-product .product-wrap .color-txt{
+            font-weight: 200;
+        }
+        .custom-product .product-wrap .product-color,
+        .custom-product .product-wrap .product-text,
+        .custom-product .product-wrap .product-jersey{
+            font-size: 27px;
+            width: 52%;
+        }
+        .custom-product .product-wrap .product-color p{
+            position: absolute;
+            left: 70px;
+            top: 200px;
+        }
+        .custom-product .product-wrap .product-color .color-list{
+            position: absolute;
+            left: 45px;
+            top: 234px;
+
+            display: flex;
+            gap: 7px;
+        }
+
+        .color-list li img{
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+        }
+        .color-list li img:hover{
+            border: 1px solid #333;
+            border-radius: 50%;
+        }
+        .custom-product .product-wrap .product-text p:nth-child(2){
+            font-size: 14px;
+            color: #1a1a1a;
+            margin-top: 3px;
+        }
+        .custom-product .product-option{
+            font-size: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .custom-product .product-option > p{
+            color: #3c3c3c;
+        }
+
+        .custom-product .product-option > p:hover{
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .custom-product .product-option .product-line{
+            width: 1px; height: 40px;
+            background-color: #999;
+            margin: 15px;
+        }
+        .custom-product .cart-btn{
+            width: 290px; height: 45px;
+            background-color: #9aded2;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 45px;
+            margin-left: 60px;
+            font-size: 25px;
+            padding-left: 10px;
+        }
+
+        .custom-product .cart-btn img{
+            padding-top: 5px;
+        }
+
+        .custom-product .cart-btn:hover{
+            background-color: #5e8981;
+        }
+        .custom-product .cart-btn p{
+            color: #fff;
+        }
+        .product-info{
+            font-size: 16px;
+            color: #1a1a1a;
+            margin-top: -20px;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 8px;
+            margin-left: 30px;
+        }
+        .product-info .product-size{
+            color: #787878;
+            font-size: 14px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+
+
+
+        /* --------------stanley-story-------------- */
+        .stanley-story{
+            width: 1680px;
+            margin: 100px auto;
+            letter-spacing: -1px;
+        }
+        .story-title{
+            font-size: 34px;
+            text-align: center;
+            color: #1a1a1a;
+            line-height: 60px;
+        }
+        .story-bg{
+            margin-top: 5px;
+        }
+        
+        .story-txt{
+            background-color: #ddebdd;
+            padding: 40px 0;
+            margin-bottom: 195px;
+        }
+        .story-txt .story-text{
+            font-size: 28px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 40px;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            padding-top: 10px;
+        }
+        .story-txt .story-source{
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+
+
+        
+        /* ------------------stanley-wide---------------- */
+        .stanley-wide{
+            width: 1680px;
+            margin: 100px auto;
+        }
+        .wide-title{
+            font-size: 53px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin:0px 99px 38px 15px;
+            position: relative;
+        }
+        .wide-title::after{
+            content: "";
+            display: block;
+
+            width: 13px;
+            height: 13px;
+            background-color: #00563f;
+            position: absolute;
+            left: 316px;
+            top: 3px;
+        }
+        .wide-wrap{
+            display: flex;
+            gap: 800px;
+            margin-bottom: 100px;
+        }
+        .wide-main{
+            position: relative;
+        }
+        .wide-main img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .wide-main img:nth-child(1){
+            width: 748px;
+            height: 998px;
+            animation: photo1 6s infinite;
+        }
+        .wide-main img:nth-child(2){
+            width: 748px;
+            height: 998px;
+            animation: photo2 6s infinite;
+        }
+
+        @keyframes photo1{
+
+            0%, 35%{
+                opacity: 1;
+            }
+
+            55%, 85%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes photo2{
+
+            0%, 40%{
+                opacity: 0;
+            }
+
+            50%, 90%{
+                opacity: 1;
+            }
+
+            100%{
+                opacity: 0;
+            }
+
+        }
+        .wide-side .wide-youtube-bg{
+            margin-bottom: 50px;
+        }
+        .wide-side .wide-recycle-bg img:nth-child(1){
+            /* width: 405px; height: 459px; */
+            height: 459px;
+            margin-top: 1px;
+        }
+        .wide-side .wide-recycle-bg img:nth-child(2){
+            /* width: 420px; height: 459px; */
+            margin-left: 35px;
+            
+        }
+
+        

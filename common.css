@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+
+/* ----------------reset-------------- */
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  color: #1a1a1a;
+}
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: local('Apple SD Gothic Neo'), 
+       url('폰트파일경로/AppleSDGothicNeo.woff2') format('woff2');
+  font-weight: 400; /* 폰트 굵기에 맞게 조절 (예: 300, 400, 700 등) */
+  font-style: normal;
+}
+body{
+  line-height:1;
+  background-color: #f5f2eb ;
+  font-family: "Apple SD Gothic Neo", "Pretendard";
+}
+a{text-decoration:none; color:inherit;}
+img{border:none; vertical-align:top;}
+ul{list-style:none;}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+input, select {
+  vertical-align:middle;
+}
+
+
+
+/* -----------------------header---------------------- */
+
+header{
+  width: 100%;
+  height: 120px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #f5f2eb;
+  box-shadow: 0 0 10px #0000004d;
+}
+
+
+.gnb-bg{
+  width: 100%;
+  height: 270px;
+  background-color: #f5f2eb;
+
+  position: absolute;
+  top: 120px;
+  left: 0;
+  display: none;
+
+  border-top: 1px solid #01372970;
+  border-bottom: 2px solid #01372970;
+}
+
+
+.gnb-wrap{
+  width: 1300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  
+  display: flex;
+  align-items: center;
+  line-height: 120px;
+}
+
+.gnb-wrap .logo img{
+  width: 280px;
+  margin-top: 30px;
+}
+
+
+.gnb{
+  width: 1100px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  line-height: 120px;
+  text-align: center;
+  margin-left: 260px;
+}
+
+.gnb > li{
+  width: calc(100%/5);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+
+.gnb .sub{
+  line-height: 2.4;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 18px 0;
+
+  display: none;
+}
+
+.sub a{
+  font-size: 18px;
+  white-space: nowrap;
+  color: #888;
+  position: relative;
+}
+
+.sub a:hover::before{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #07602f;
+  border-radius: 2px;
+
+  position: absolute;
+  top: 7px;
+  left: -10px;
+}
+
+.sub li a:hover{
+  color: #1a1a1a;
+}
+
+.gnb-wrap .etc{
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+
+
+.gnb-wrap .etc img{
+  width: 34px;
+  height: 34px;
+}
+
+/* --------------------gnbEnd--------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------footer---------------------- */
+
+footer{
+  width: 100%;
+}
+
+.footer-top-bg{
+  background-color: #013729;
+}
+
+.footer-top{
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top>ul{
+  display: flex;
+  gap: 40px;
+}
+
+.footer-top li{
+  color: #f5f2eb;
+}
+
+
+/* ----------------footerMid----------------- */
+
+.footer-mid{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.footer-main{
+  display: flex;
+  gap: 160px;
+}
+
+.footer-main li,
+.copymenu li{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.footer-main h4{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+  color: #2b2b2b;
+}
+
+.footer-main > li:first-child ul li:first-child{
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+.footer-main li span{
+  display: block;
+  font-size: 12px;
+  transform: translateY(-5px);
+}
+
+.footer-main li strong,
+.copymenu li strong{
+  font-weight: 400;
+}
+
+.footer-icon{
+  display: flex;
+  gap: 15px;
+}
+
+
+
+/* -------------------------copy menu------------- */
+
+.copymenu{
+  width: 90%;
+  margin: 40px auto;
+}
+
+.copymenu > ul{
+  display: flex;
+  gap: 220px;
+}

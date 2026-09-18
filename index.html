@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gnb > li').mouseenter(function(){
+                $('.gnb-bg').stop().slideDown(300);
+                $('.sub').stop().slideDown(300);
+
+            });
+
+            $('header').mouseleave(function(){
+                $('.gnb-bg').stop().slideUp(300);
+                $('.sub').stop().slideUp(300);
+            });
+
+
+            $('.custom-tumbler').mouseenter(function(){
+                $(this).stop().addClass('tumbler-up');
+            });
+
+            $('.custom-tumbler').mouseleave(function(){
+                $(this).stop().removeClass('tumbler-up');
+            });
+
+        });
+    </script>
+</head>
+<body>
+<!-- -------------header------------------- -->
+
+    <header>
+        <div class="gnb-bg"></div>
+        <div class="gnb-wrap">
+        <div class="logo"><a href="index.html"><img src="images/stanley-logo.png" alt="logo"></a></div>
+
+        <ul class="gnb">
+            <li>
+            <a href="from_1913.html">From1913</a>
+            <ul class="sub">
+                <li><a href="from_1913.html">From1913</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="shop.html">Shop</a>
+            <ul class="sub">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="shop.html">Quencher</a></li>
+                <li><a href="shop.html">Iceflow</a></li>
+                <li><a href="shop.html">Slimbottle</a></li>
+                <li><a href="shop.html">Vitalize</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="#">Customize</a>
+            <ul class="sub">
+                <li><a href="#">Customize</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="stanley-life.html">StanleyLife</a>
+            <ul class="sub">
+                <li><a href="stanley-life.html">Seasonal</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a href="#">Contact</a>
+            <ul class="sub">
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Event&News</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            </li>
+        </ul>
+
+        <div class="etc">
+            <img src="images/magnifying-glass-solid-full.svg" alt="search icon">
+            <img src="images/cart-shopping-solid-full.svg" alt="cart icon">
+            <img src="images/bars-solid-full.svg" alt="hamburger icon">
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <ul class="main-hero">
+                <li><img class="on" src="images/hero003.png" alt="main-hero1"></li>
+                <li><img src="images/hero00.png" alt="main-hero2"></li>
+            </ul>
+        </section>
+
+            
+            <!-- 베스트 제품 소개---------------------------------->
+            <section class="best">
+            <div class="best-wrap">
+                <div class="quen-bg">
+                <div class="quencher"><!--넘버원 퀜처----------->
+                    <img src="images/tumbler-png_05.png" alt="퀜처">
+                    <ul>
+                        <li><h1>NO.1 Quencher</h1></li>
+                        <li>압도적인 대용량과 그립감</li>
+                        <li>자유로운 3-way 스위블 커버</li>
+                        <li>데일리 오브제</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="flow-bg">
+                <div class="flow">
+                    <ul>
+                        <li><h1>NO.2 Ice Flow</h1></li>
+                        <li>극강의 얼음 보온 보냉력</li>
+                        <li>핸디한 이동성과 내구성</li>
+                        <li>완벽 밀폐의 플립 스트로</li>
+                    </ul>
+                    <img src="images/tumbler-png_10.png" alt="아이스플로우">
+                </div>
+                </div>
+                <div class="slim-bg">
+                <div class="slim">
+                    <img src="images/tumbler-png_13.png" alt="슬림보틀">
+                    <ul>
+                        <li><h1>NO.3 Slim Bottle</h1></li>
+                        <li>초경량 에어로라이트 핏</li>
+                        <li>한 손에 들어오는 슬림한 그립</li>
+                        <li>원터치 안심 밀폐 캡</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </section>
+
+
+
+
+
+
+            <!----------------커스텀----------------------->
+    
+    
+        
+        <section class="stanley-customize">
+
+            <p class="custom-title">
+                Customize
+            </p>
+
+            <div class="stanley-disign">
+
+                <div class="custom-wrap">
+
+                    <div class="custom-info">
+
+                        <p class="custom-label">
+                            RE-DESIGN<br>
+                            <span class="label-point">YOUR TUMBLER</span>
+                        </p>
+                        <p class="custom-desc">
+                            당신만의 텀블러를 제작해 보세요.
+                        </p>
+
+                        <p class="color-step">
+                            01<br>
+                            CHOOSE <span class="color-point">COLOR</span>
+                        </p>
+                        
+                        <div class="step-line"></div>
+
+                        <p class="color-step">
+                            02<br>
+                            ADD YOUR <span class="option-point">OPTION</span>
+                        </p>
+
+                        <div class="step-line"></div>
+
+                        <p class="color-step">
+                            03<br>
+                            COMPLETE
+                        </p>
+
+                    </div>
+
+                    <div class="custom-tumbler">
+                        <img src="images/index_12.png" alt="텀블러">
+
+                        <div class="selected-color">
+                            <p>SELECTED COLOR</p>
+                            <p>MINT</p>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-product">
+                        <div class="product-wrap">
+
+                            <div class="product-color">
+                                <p>COLOR</p>
+                                
+                                <ul class="color-list">
+                                    <li><img src="images/index_27.png" alt="파랑"></li>
+                                    <li><img src="images/index_28.png" alt="다홍"></li>
+                                    <li><img src="images/index_29.png" alt="분홍"></li>
+                                    <li><img src="images/index_30.png" alt="초록"></li>
+                                </ul>
+                                
+                            </div>
+
+                            <p class="color-txt">
+                                ₩10,000
+                            </p>
+                        </div>
+                        
+                        <div class="product-wrap">
+
+                            <div class="product-text">
+                                <p>TEXT</p>
+                                <p>
+                                    20자 이내<br>
+                                    영문 / 숫자 삽입가능
+                                </p>
+                            </div>
+
+                            <p class="color-txt">
+                                ₩20,000
+                            </p>
+                        </div>
+                        
+                        <div class="product-wrap">
+
+                            <div class="product-jersey">
+                                <p>
+                                    JERSEY
+                                </p>
+                                
+                            </div>
+                            <p class="color-txt">
+                                ₩25,000
+                            </p>
+                        </div>
+                        
+                        <div class="product-option">
+                            <p>바이탈라이즈<br>캐리올</p>
+
+                            <div class="product-line"></div>
+
+                            <p>퀜처 캐리올</p>
+
+                            <div class="product-line"></div>
+
+                            <p>부츠 커버</p>
+                        </div>
+                        
+                        <div class="cart-btn">
+                            <p>
+                                Add to Cart
+                                <img src="images/index_25.png" alt="장바구니">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-info">
+                    <p>QUENCHER H2.0</p>
+
+                    <div class="product-size">
+                        <div>30OZ</div>
+                        <div>|</div>
+                        <div>887ML</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-------------------stanley-story---------------------->
+
+        <section class="stanley-story">
+
+            <p class="story-title">
+                " 헬기에서 떨어트린 보온병을 며칠 후 다시 찾았는데, 그 안의 커피는 그때까지 따뜻했었죠."
+            </p>
+
+            <img class="story-bg" src="images/index_13.jpg" alt="사람">
+
+            <div class="story-txt">
+                <p class="story-text">
+                    막 파일럿이 되었을 때, 전 이 광고 문구를 시험해보고 싶었습니다.<br>
+                    뜨거운 커피가 담긴 스탠리 보온병을 4000피트 상공 위 경비행기 안에서 농장 지대로 떨어트리면서 말이죠.<br>
+                    다음날, 제가 스탠리 보온병을 떨어트린 그 지점으로 차를 몰고가서 스탠리 보온병을 찾아봤습니다.<br>
+                    놀랍게도 보온병은 온전했고 그 안에 담긴 커피마저도 뜨거웠습니다.
+                </p>
+                <p class="story-source">
+                    [ 크리스토퍼 C, 콜로라도에서]
+                </p>
+            </div>
+
+        </section>
+        <!-- -------------------------stanley-wide--------------- -->
+        <section class="stanley-wide">
+            <p class="wide-title">
+                Stanley Wide
+            </p>
+            <div class="wide-wrap">
+
+                <div class="wide-main">
+                    <img src="images/index_16.jpg" alt="달리기">
+                    <img src="images/index_17.png" alt="여름">
+                </div>
+
+                <div class="wide-side">
+
+                    <div class="wide-youtube-bg">
+                        <img src="images/index_18.jpg" alt="메시">
+                    </div>
+
+                    <div class="wide-recycle-bg">
+                        <img src="images/index_24.jpg" alt="텀블러">
+                        <img src="images/index_22.jpg" alt="환경">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+<!-- -----------------------------footer----------- -->
+
+
+
+    <footer>
+    <div class="footer-top-bg">
+    <div class="footer-top">
+        <div class="footer-logo"><img src="images/footer-logo.jpg" alt="footer logo"></div>
+        <ul>
+        <li>회사소개</li>
+        <li>이용안내</li>
+        <li>개인정보 처리방침</li>
+        <li>이용약관</li>
+        <li>고객센터</li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- ---------------footer-mid------------- -->
+
+    <div class="footer-mid">
+    <ul class="footer-main">
+        <li>
+        <h4>CS CENTER</h4>
+            <ul>
+            <li>070-8806-6216</li>
+            <li>상담시간: 월 ~ 금 10:00 ~ 17:00</li>
+            <li>
+                점심시간: 12:00 ~ 13:00 <br>
+                <span>* 공휴일은 고객상담실 휴무입니다.</span>
+            </li>
+            </ul>
+        </li>
+        
+        <li>
+        <h4>BANKING INFO</h4>
+            <ul>
+            <li>국민 613801-01-559672</li>
+            <li>기업 233-094199-01-015</li>
+            <li>외환 630009972821</li>
+            <li><strong>예금주:주식회사 씨앤씨 글로벌(CNC GLOBAL)</strong></li>
+            </ul>
+        </li>
+        
+        <li>
+        <h4>COMMUNITY BOARD</h4>
+            <ul>
+            <li>FAQ</li>
+            <li>NOTICE</li>
+            <li>CONTACT US</li>
+            </ul>
+        </li>
+        </ul>
+        <ul class="footer-icon">
+        <li><a href="https://www.instagram.com/stanley1913_korea/" target="_blank"><img src="images/footer-icon1.png" alt="인스타 아이콘"></a></li>
+        <li><a href="https://brand.naver.com/stanley_korea" target="_blank"><img src="images/footer-icon2.png" alt="네이버 아이콘"></a></li>
+        <li><a href="https://www.facebook.com/stanley1913korea/" target="_blank"><img src="images/footer-icon3.png" alt="페이스북 아이콘"></a></li>
+        <li><a href="#"><img src="images/footer-icon4.png" alt="쓰레드 아이콘"></a></li>
+        </ul>
+    
+    </div>
+
+
+    <!-- -----------------------copy menu------------ -->
+
+    <div class="copymenu">
+    <ul>
+        <li>
+        <ul class="copy-left">
+            <li>상호 : 주식회사 씨앤씨글로벌(CNC GLOBAL) &nbsp;|&nbsp; 대표자: 최효준/ 조성우 &nbsp;|&nbsp; 고객센터 :0708066216 &nbsp;|&nbsp; FAX: 02 6937-0630</li>
+            <li>주소 : 12731경기도 광주시 초월읍 동막골길 84-2 씨앤씨글로벌</li>
+            <li>사업자등록번호 : 745-87-00138[사업자정보확인] &nbsp;|&nbsp; 통신판매업 신고번호 : 제 2015-경기광주-0590호</li>
+            <li>개인정보보호책임자 : 최효준(cncglobalkr@gmail.com)</li>
+        </ul>
+        </li>
+        <li>
+        <ul class="copy-right">
+            <li><strong>반품주소 : 12806 경기도 광주시 곤지암읍 독고개길 155</strong> &nbsp;/&nbsp; 교환 및 반품시 미리 고객센터에 접수후 보내주세요.</li>
+            <li>
+            당사의 모든제작물의 저작권은 CNC GLOBAL에 있으며, 무단복제나 도용은 저작권법(97조5항)에 의해 금지되어 있습니다. <br>
+            이를 위반시 법적인 처벌을 받을 수 있습니다.
+            </li>
+        </ul>
+        </li>
+    </ul>
+    </div>
+    </footer>
+
+
+    <script>
+        const heros = document.querySelectorAll('.main-hero img');
+        
+        let current = 0;
+        setInterval(function(){
+            heros.forEach(function(hero){
+                hero.classList.remove('on');
+            });
+            current++;
+            if(current === heros.length){
+                current = 0;
+            }
+            heros[current].classList.add('on');
+        }, 5000);
+    </script>
+</body>
+</html>

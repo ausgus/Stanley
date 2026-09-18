@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="shop.css">
+
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      // --------gnb------------
+        $('.gnb > li').mouseenter(function(){
+          $('.gnb-bg').stop().slideDown(300);
+          $('.sub').stop().slideDown(300);
+        });
+
+        $('header').mouseleave(function(){
+          $('.gnb-bg').stop().slideUp(300);
+          $('.sub').stop().slideUp(300);
+        });
+        // ----------gnb 끝-----------
+
+        // ---------product 메뉴 전환----------
+
+        $('.list-inner > li').click(function(){
+          let num = $(this).index();
+
+          $('.product-all').removeClass('current');
+          $('.product-list > ul > li').stop().fadeOut();
+
+          $('.product-list > ul > li').eq(num).stop().fadeIn();
+        });
+
+
+        // ---------product 메뉴 전환 End----------
+
+
+
+
+      });
+  </script>
+
+
+</head>
+<body>
+  <header>
+    <div class="gnb-bg"></div>
+    <div class="gnb-wrap">
+      <div class="logo"><a href="index.html"><img src="images/stanley-logo.png" alt="logo"></a></div>
+
+      <ul class="gnb">
+        <li>
+          <a href="from_1913.html">From1913</a>
+          <ul class="sub">
+            <li><a href="from_1913.html">From1913</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="shop.html">Shop</a>
+          <ul class="sub">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html">Quencher</a></li>
+            <li><a href="shop.html">Iceflow</a></li>
+            <li><a href="shop.html">Slimbottle</a></li>
+            <li><a href="shop.html">Vitalize</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Customize</a>
+          <ul class="sub">
+            <li><a href="#">Customize</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="stanley-life.html">StanleyLife</a>
+          <ul class="sub">
+            <li><a href="stanley-life.html">Seasonal</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+          <ul class="sub">
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Event&News</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="etc">
+        <img src="images/magnifying-glass-solid-full.svg" alt="search icon">
+        <img src="images/cart-shopping-solid-full.svg" alt="cart icon">
+        <img src="images/bars-solid-full.svg" alt="hamburger icon">
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <section class="mainhero">
+      <ul>
+        <li><img class="on" src="images/shophero.png" alt="main hero"></li>
+        <li><img src="images/main-hero2.jpeg" alt="main hero2"></li>
+      </ul>
+    </section>
+
+    <!-- ---------------category--------------- -->
+<!-- 
+    <section class="category">
+      <ul>
+        <li>Quencher</li>
+        <li>Iceflow</li>
+        <li>Slimbottle</li>
+        <li>Vitalize</li>
+        <li>Acc</li>
+      </ul>
+    </section> -->
+
+    <!-- --------카테고리 삭제 건의----------- -->
+
+
+    <!-- -------------------best------------------ -->
+
+
+    <section class="best">
+      <h2>BEST</h2>
+      <ul class="best-wrap">
+        <li class="best-l">
+          <h3>
+            <span>What's your</span><br>
+            Tumbler?
+          </h3>
+          <p>오직 하나뿐인, 나만의 텀블러를 완성해보세요.</p>
+          <div class="cus-btn">커스터마이즈</div>
+        </li>
+        <li class="best-r">
+          <ul>
+            <li>
+              <ul>
+                <li><img src="images/shop-image_10.png" alt="best collection"></li>
+                
+                <li>
+                  <ul class="color-chip">
+                    <li><img src="images/DTC_Color_Swatch-Pink_Mesa_-_swatch_24x24.png" alt="color-chip pink"></li>
+                    <li><img src="images/DTC_Color_Swatch-Daffodil-_Color_Swatch_0eaf6739-ed18-4da0-b6e9-d06e562a4f90_24x24.png" alt="color-chip yellow"></li>
+                    <li><img src="images/DTC_Color_Swatch-Coastal_Teal_-_swatch_24x24.png" alt="color-chip coastal"></li>
+                    <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="p-intro">
+                    <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                    <li>48,000 won</li>
+                    <li>
+                      <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul>
+                <li><img src="images/shop-image_12.png" alt="best collection"></li>
+                
+                <li>
+                  <ul class="color-chip">
+                    <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+                    <li><img src="images/DTC_Color_Swatch-Pink_Mesa_-_swatch_24x24.png" alt="color-chip pink"></li>
+                    <li><img src="images/DTC_Color_Swatch-Daffodil-_Color_Swatch_0eaf6739-ed18-4da0-b6e9-d06e562a4f90_24x24.png" alt="color-chip yellow"></li>
+                    <li><img src="images/DTC_Color_Swatch-Coastal_Teal_-_swatch_24x24.png" alt="color-chip coastal"></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="p-intro">
+                    <li>퀜처 H2.0 플로우스테이트 텀블러 887ml</li>
+                    <li>46,000 won</li>
+                    <li>
+                      <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul>
+                <li><img src="images/shop-image_14.png" alt="best collection"></li>
+                
+                <li>
+                  <ul class="color-chip">
+                    <li><img src="images/DTC_Color_Swatch-Blue_Dream_Stone_-_swatch_24x24.png" alt="color-chip sky blue"></li>
+                    <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+                    <li><img src="images/DTC_Color_Swatch-Daffodil-_Color_Swatch_0eaf6739-ed18-4da0-b6e9-d06e562a4f90_24x24.png" alt="color-chip yellow"></li>
+                    <li><img src="images/DTC_Color_Swatch-Coastal_Teal_-_swatch_24x24.png" alt="color-chip coastal"></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="p-intro">
+                    <li>아이스플로우  플립 스트로 텀블러 30oz</li>
+                    <li>49,000 won</li>
+                    <li>
+                      <div class="buy-btn"><img id="btn-h" src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+
+
+    <!-- -------------------new------------------ -->
+
+
+    <section class="new">
+      <h2>NEW</h2>
+      <ul>
+        <li>
+          <ul>
+            <li><img src="images/shop-image_20.png" alt="new collection"></li>
+            
+            <li>
+              <ul class="color-chip">
+                <li><img src="images/DTC_Color_Swatch-Sorbet_Groove_-_Color_Swatch_24x24.webp" alt="color-chip pink sorbet"></li>
+                <li><img src="images/DTC_Color_Swatch-Daffodil-_Color_Swatch_0eaf6739-ed18-4da0-b6e9-d06e562a4f90_24x24.png" alt="color-chip yellow"></li>
+                <li><img src="images/DTC_Color_Swatch-Chili_Red_-_Color_Swatch_24x24.png" alt="color-chip chili red"></li>
+                <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="p-intro">
+                <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                <li>48,000 won</li>
+                <li>
+                  <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <ul>
+            <li><img src="images/shop-image_22.png" alt="new collection"></li>
+            
+            <li>
+              <ul class="color-chip">
+                <li><img src="images/DTC_Color_Swatch-Sea_Glass_Plume_-_swatch_24x24.webp" alt="color-chip sea plume"></li>
+                <li><img src="images/DTC_Color_Swatch-Sorbet_Groove_-_Color_Swatch_24x24.webp" alt="color-chip pink sorbet"></li>
+                <li><img src="images/DTC_Color_Swatch-Coastal_Teal_-_swatch_24x24.png" alt="color-chip coastal"></li>
+                <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="p-intro">
+                <li>퀜처 H2.0 플로우스테이트 텀블러 887ml</li>
+                <li>46,000 won</li>
+                <li>
+                  <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <ul>
+            <li><img src="images/shop-image_24.png" alt="new collection"></li>
+            
+            <li>
+              <ul class="color-chip">
+                <li><img src="images/Cherry_Blossom_Gloss_-_Swatch_24x24.png" alt="color-chip cherry blossom"></li>
+                <li><img src="images/DTC_Color_Swatch-Sorbet_Groove_-_Color_Swatch_24x24.webp" alt="color-chip pink sorbet"></li>
+                <li><img src="images/DTC_Color_Swatch-Sea_Glass_Plume_-_swatch_24x24.webp" alt="color-chip sea plume"></li>
+                <li><img src="images/DTC_Color_Swatch-Coastal_Teal_-_swatch_24x24.png" alt="color-chip coastal"></li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="p-intro">
+                <li>아이스플로우  플립 스트로 텀블러 30oz</li>
+                <li>49,000 won</li>
+                <li>
+                  <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <ul>
+            <li><img src="images/shop-image_26.png" alt="new collection"></li>
+            
+            <li>
+              <ul class="color-chip">
+                <li><img src="images/DTC_Color_Swatch-Blue_Dream_Gradient_-_swatch_24x24.png" alt="color-chip blue-dream"></li>
+                <li><img src="images/DTC_Color_Swatch-purple_umbra_-_swatch_d0b23296-659b-497e-88ab-44e96a210ac8_24x24.png" alt="color-chip purple"></li>
+                <li><img src="images/DTC_Color_Swatch-Sorbet_Groove_-_Color_Swatch_24x24.webp" alt="color-chip pink sorbet"></li>
+                <li><img src="images/DTC_Color_Swatch-Chili_Red_-_Color_Swatch_24x24.png" alt="color-chip chili red"></li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="p-intro">
+                <li>아이스플로우  플립 스트로 텀블러 30oz</li>
+                <li>49,000 won</li>
+                <li>
+                  <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- --------------product----------- -->
+    
+
+
+
+
+    <section class="product">
+      <ul class="product-wrap">
+        <li>
+          <ul class="product-category">
+            <li><h2 id="category-tit">All</h2></li>
+            <li>
+              <ul class="category-list">
+                <li>
+                  <h4>category</h4>
+                  <ul class="list-inner">
+                    <li>- All </li>
+                    <li>- Quencher </li>
+                    <li>- Iceflow </li>
+                    <li>- Slimbottle </li>
+                    <li>- Vitalize </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+
+
+
+
+        <li class="product-list">
+          <ul>
+
+
+            <!-- ------------all items------------------ -->
+
+
+
+
+
+
+            <li class="product-inner product-all current">
+              <ul class="product-grid">
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_01.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow1.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow1-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow5-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow4-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow8-1.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우  플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_01.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_01_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+            
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_01.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_01_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우2.0 플립 스트로 텀블러 887ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_05.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_05_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>49,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow10.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow10-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow7-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow5-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow1-1.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_06.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_06_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow3.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow3-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow10-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow7-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow1-1.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우  플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_09.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_24.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_22.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+            
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow4.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow4-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow6-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow1-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow2-1.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우2.0 플립 스트로 텀블러 887ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow7.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow7-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow10-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow5-1.webp" alt="color-chip"></li>
+                        <li><img src="images/iceflow/iceflow11-1.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>49,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_12.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_34.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_30.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+
+            <!-- -----------------Quencher------------- -->
+
+
+
+
+
+
+
+
+
+            <li class="product-inner product-quencher">
+              <ul class="product-grid">
+                
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_01.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_02.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_05.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_02.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_02.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_03.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_11.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_04.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_05.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_05.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_06.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_07.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_08.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_11.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_09.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_10.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_11.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_11.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/Quencher/Quencher_12.png" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_02.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+
+
+            <!-- -----------------Quencher End------------- -->
+
+
+            
+            <!-- ----------------Iceflow---------------------------- -->
+
+
+
+
+
+            <li class="product-inner product-iceflow">
+              <ul class="product-grid">
+                
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow1.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow1-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_02.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_05.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow2.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow2-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow3.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow3-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow4.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow4-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow5.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow5-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow6.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow6-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow7.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow7-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow8.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow8-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_10.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_11.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_12.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/iceflow9.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow9-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_06.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_03.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow10.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow10-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_07.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>아이스플로우 플립 스트로 텀블러 30oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow11.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow11-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_04.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_01.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><img src="images/iceflow/Iceflow12.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/iceflow/iceflow12-1.webp" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_02.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_09.png" alt="color-chip"></li>
+                        <li><img src="images/Quencher/Quencher_Color_08.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>퀜처 프로투어 플립 스트로 텀블러</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+                
+
+
+
+
+
+
+
+            <!-- ----------------------Iceflow End------------ -->
+
+
+            <!-- ------------Slim bottle-------------- -->
+
+
+
+
+            <li class="product-inner product-slimbottle">
+              <ul class="product-grid">
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_01.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_01_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_01_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_02.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_02_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_02_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_02_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_02_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_03.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_03_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_03_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_03_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_03_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_04.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_04_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_04_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_04_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_04_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_05.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_05_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_05_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_05_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_05_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_06.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_06_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_06_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_06_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_06_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_07.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_07_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_07_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_07_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_07_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_08.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_08_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_08_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_08_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_08_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_09.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_09_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_09_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_09_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_09_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_10.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_10_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_10_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_10_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_10_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_11.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_11_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_11_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_11_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_11_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                <li>
+                  <ul>
+                    <li><img src="images/slimbottle/slimbottle_12.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/slimbottle/slim_color_12_1.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_12_2.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_12_3.webp" alt="color-chip"></li>
+                        <li><img src="images/slimbottle/slim_color_12_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>스탠리 플로우스테이트 스프링 보틀 591ml</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+
+
+
+            <!-- -------------------Slim bottle End-------------- -->
+
+
+
+
+            <!-- ----------Vitalize---------------- -->
+
+
+
+            <li class="product-inner product-vitalize">
+              <ul class="product-grid">
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_01.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_01_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_01_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_02.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_02_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_02_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_02_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_02_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_03.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_03_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_03_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_03_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_03_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_04.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_04_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_04_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_04_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_04_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_05.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_05_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_05_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_06.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_06_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_06_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_07.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_07_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_07_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_07_3.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_07_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_08.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_08_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_08_2.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_08_3.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_08_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_09.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_09_1.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_09_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_09_3.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_09_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_10.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_10_1.png" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_10_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_10_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_10_4.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_11.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_11_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_11_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_11_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_11_4.png" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                
+                <li>
+                  <ul>
+                    <li><img src="images/vitalize/vital_12.webp" alt="product collection"></li>
+                    <li>
+                      <ul class="color-chip">
+                        <li><img src="images/vitalize/vital_color_12_1.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_12_2.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_12_3.webp" alt="color-chip"></li>
+                        <li><img src="images/vitalize/vital_color_12_4.webp" alt="color-chip"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="p-intro">
+                        <li>바이탈 쉐이커 텀블러 20oz</li>
+                        <li>46,000 won</li>
+                        <li>
+                          <div class="buy-btn"><img src="images/shop-heart_25.png" alt="찜하기"><span>|</span>BUY NOW</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+
+
+              </ul>
+            </li>
+
+            <!-- -------------------Vitalize End---------- -->
+
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+<!-- -----------------------------footer----------- -->
+
+
+
+    <footer>
+    <div class="footer-top-bg">
+      <div class="footer-top">
+        <div class="footer-logo"><img src="images/footer-logo.jpg" alt="footer logo"></div>
+        <ul>
+          <li>회사소개</li>
+          <li>이용안내</li>
+          <li>개인정보 처리방침</li>
+          <li>이용약관</li>
+          <li>고객센터</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ---------------footer-mid------------- -->
+
+    <div class="footer-mid">
+      <ul class="footer-main">
+        <li>
+          <h4>CS CENTER</h4>
+            <ul>
+              <li>070-8806-6216</li>
+              <li>상담시간: 월 ~ 금 10:00 ~ 17:00</li>
+              <li>
+                점심시간: 12:00 ~ 13:00 <br>
+                <span>* 공휴일은 고객상담실 휴무입니다.</span>
+              </li>
+            </ul>
+        </li>
+        
+        <li>
+          <h4>BANKING INFO</h4>
+            <ul>
+              <li>국민 613801-01-559672</li>
+              <li>기업 233-094199-01-015</li>
+              <li>외환 630009972821</li>
+              <li><strong>예금주:주식회사 씨앤씨 글로벌(CNC GLOBAL)</strong></li>
+            </ul>
+        </li>
+        
+        <li>
+          <h4>COMMUNITY BOARD</h4>
+            <ul>
+              <li>FAQ</li>
+              <li>NOTICE</li>
+              <li>CONTACT US</li>
+            </ul>
+        </li>
+        </ul>
+        <ul class="footer-icon">
+          <li><a href="https://www.instagram.com/stanley1913_korea/" target="_blank"><img src="images/footer-icon1.png" alt="인스타 아이콘"></a></li>
+          <li><a href="https://brand.naver.com/stanley_korea" target="_blank"><img src="images/footer-icon2.png" alt="네이버 아이콘"></a></li>
+          <li><a href="https://www.facebook.com/stanley1913korea/" target="_blank"><img src="images/footer-icon3.png" alt="페이스북 아이콘"></a></li>
+          <li><a href="#"><img src="images/footer-icon4.png" alt="쓰레드 아이콘"></a></li>
+        </ul>
+      
+    </div>
+
+
+    <!-- -----------------------copy menu------------ -->
+
+    <div class="copymenu">
+      <ul>
+        <li>
+          <ul class="copy-left">
+            <li>상호 : 주식회사 씨앤씨글로벌(CNC GLOBAL) &nbsp;|&nbsp; 대표자: 최효준/ 조성우 &nbsp;|&nbsp; 고객센터 :0708066216 &nbsp;|&nbsp; FAX: 02 6937-0630</li>
+            <li>주소 : 12731경기도 광주시 초월읍 동막골길 84-2 씨앤씨글로벌</li>
+            <li>사업자등록번호 : 745-87-00138[사업자정보확인] &nbsp;|&nbsp; 통신판매업 신고번호 : 제 2015-경기광주-0590호</li>
+            <li>개인정보보호책임자 : 최효준(cncglobalkr@gmail.com)</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="copy-right">
+            <li><strong>반품주소 : 12806 경기도 광주시 곤지암읍 독고개길 155</strong> &nbsp;/&nbsp; 교환 및 반품시 미리 고객센터에 접수후 보내주세요.</li>
+            <li>
+              당사의 모든제작물의 저작권은 CNC GLOBAL에 있으며, 무단복제나 도용은 저작권법(97조5항)에 의해 금지되어 있습니다. <br>
+              이를 위반시 법적인 처벌을 받을 수 있습니다.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script>
+
+// ----------------mainHero-----------
+
+const mainHero = document.querySelectorAll('.mainhero img');
+let current = 0;
+
+setInterval(function(){
+  mainHero.forEach(function(hero){
+    hero.classList.remove('on')
+  });
+
+  current++;
+
+  if(current === mainHero.length){
+    current = 0;
+  };
+  
+  mainHero[current].classList.add('on');
+}, 5000);
+
+// ---------------상품버튼-----------------
+
+
+const buyBtn = document.querySelectorAll('.buy-btn');
+
+buyBtn.forEach(function(btn){
+  let isLiked = false;
+  const heart = btn.querySelector('img');
+  
+  heart.addEventListener('click', function(){
+    
+    if(isLiked){
+      heart.src = 'images/shop-heart_25.png';
+      isLiked = false;
+    } else{
+      heart.src = 'images/shop-heart_22.png';
+      isLiked = true;
+    }
+  });
+})
+
+
+    // ----------상품 메뉴 전환효과----------
+const categorys = document.querySelectorAll('.list-inner > li');
+const categoryTit = document.querySelector('#category-tit');
+
+// categorys.forEach(function(category){
+//   category.addEventListener('click', function(){
+//     category.classList.remove('current');
+//   });
+// });
+
+categorys[0].addEventListener('click', function(){
+  categoryTit.textContent = 'All';
+});
+
+categorys[1].addEventListener('click', function(){
+  categoryTit.textContent = 'Quencher';
+});
+
+categorys[2].addEventListener('click', function(){
+  categoryTit.textContent = 'Iceflow';
+});
+
+categorys[3].addEventListener('click', function(){
+  categoryTit.textContent = 'Slimbottle';
+});
+
+categorys[4].addEventListener('click', function(){
+  categoryTit.textContent = 'Vitalize';
+});
+
+
+  </script>
+</body>
+</html>
